@@ -1,0 +1,5 @@
+lnstagram\MainController.class
+lnstagram\autenticazione\AuthConfigurazione.class
+lnstagram\controller\ArtistaController.class
+lnstagram\Application.class
+lnstagram\service\ArtistaService.class
